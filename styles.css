@@ -1,74 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 :root {
-  --dark: #1f1d36;
-  --purp: #3f3351;
-  --pink: #864879;
-  --salmon: #e9a6a6;
+  --dark: #354259;
+  --brown: #cdc2ae;
+  --gold: #ece5c7;
+  --green: #c2ded1;
 }
-nav {
-  margin: 27px auto 0;
-  position: relative;
-  width: 16.3%;
-  height: 50px;
-  background-color: var(--purp);
-  border-radius: 8px;
-  font-size: 0;
-}
-nav a {
-  line-height: 50px;
-  height: 100%;
-  font-size: 15px;
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--salmon);
-  cursor: pointer;
-}
-nav .animation {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  z-index: 0;
-  transition: all 0.5s ease 0s;
-  border-radius: 8px;
-}
-a:nth-child(1) {
-  width: 100px;
-}
-a:nth-child(2) {
-  width: 110px;
-}
-a:nth-child(3) {
-  width: 100px;
-}
-nav .start-home,
-a:nth-child(1):hover ~ .animation {
-  width: 100px;
-  left: 0;
-  background-color: var(--dark);
-}
-nav .start-about,
-a:nth-child(2):hover ~ .animation {
-  width: 110px;
-  left: 100px;
-  background-color: var(--dark);
-}
-nav .start-contact,
-a:nth-child(3):hover ~ .animation {
-  width: 100px;
-  left: 210px;
-  background-color: var(--dark);
-}
-
 body {
   font-size: 12px;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   background: var(--dark);
 }
 span {
   color: #2bd6b4;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  right: 0;
+  padding-right: 15%;
+  bottom: 15%;
+  background-color: transparent;
+}
+.nav a {
+  color: var(--gold);
+  font-size: 30px;
+  text-decoration: none;
+}
+.nav a:hover {
+  color: var(--green);
 }
 .intro {
   display: flex;
@@ -80,12 +41,15 @@ span {
 }
 .intro-title {
   font-size: 86px;
-  color: var(--salmon);
+  color: var(--green);
+}
+.name {
+  color: var(--gold);
 }
 .intro-sub {
   margin-top: -65px;
   font-size: 35px;
-  color: var(--purp);
+  color: var(--green);
 }
 .intro-desc {
   font-size: 22px;
@@ -93,20 +57,15 @@ span {
   text-align: justify;
   padding-bottom: 50px;
   margin-top: -20px;
-  color: var(--purp);
+  color: var(--green);
 }
-@media only screen and (min-width: 380px) {
-  nav {
-    width: 83%;
-  }
-}
-@media only screen and (min-width: 700px) {
-  nav {
-    width: 41.3%;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  nav {
-    width: 16.45%;
-  }
+.intro-contact {
+  text-decoration: none;
+  color: var(--gold);
+  font-size: 25px;
+  font-weight: bolder;
+  padding: 15px 30px;
+  cursor: pointer;
+  border: 3px solid var(--gold);
+  border-radius: 4px;
 }
