@@ -8,34 +8,76 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Intro Page -->
     <section class="intro" id="intro">
-      <h1 class="intro-title">hi, i'm <span class="name">arafat</span></h1>
-      <h2 class="intro-sub">i code and design things</h2>
-      <p class="intro-desc">
-        I'm a computer science student based in Portland. I'm interested in
-        full-stack development, with hopes of becoming a software engineer.
-      </p>
+      <div class="img-desc">
+        <div id="intro-box">
+          <h1 class="intro-title">hi, i'm <span class="name">arafat</span></h1>
+          <h2 class="intro-sub">i code and design things</h2>
+          <p class="intro-desc">
+            I'm a computer science student based in Portland. I'm interested in
+            full-stack development, with hopes of becoming a software engineer.
+          </p>
+        </div>
+        <!-- SVG of a Man -->
+        <div class="man">
+          <object data="Asset.svg" width="350" height="auto"></object>
+          <!-- <a href="https://www.vecteezy.com/free-vector/sitting-at-desk">Sitting At Desk Vectors by Vecteezy</a> -->
+        </div>
+      </div>
       <a href="mailto:arafatiqbal123@gmail.com" class="intro-contact"
         >Email Me</a
       >
     </section>
+
+    <!-- About Me -->
     <section class="about-me" id="about">
       <h1>/about me</h1>
       <div class="container">
-        <p>
-          Hello, my name is Arafat! I am a fourth year computer science student
-          attending Portland State University, and expecting to graduate June of
-          2022. As of right now, my goal is to utilize my well-honed skills in
-          coding as well as learn and further develop my knowledge in other
-          areas of computer science and tech! Currently I am interested in front
-          and back end development, and am working on projects as well as
-          internships to further my understanding in those areas!
-        </p>
+        <div class="aboutdesc">
+          <p>
+            I am a fourth year computer science student attending
+            <a href="https://www.pdx.edu/">Portland State University</a>, and
+            expecting to graduate June of 2022. Currently, I am a Software
+            Development Engineer intern at
+            <a href="https://www.dexcom.com/">Dexcom</a>. I am hoping to become
+            a full-stack Software Engineer after graduation.
+          </p>
+          <br />
+          <p>Here are some technologies I have been working with:</p>
+          <ul class="tech-stack">
+            <li>Javascript ES6+</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>HTML & CSS</li>
+          </ul>
+          <p>
+            Outside of work I enjoy working out, watching anime, and playing
+            video games. I also like film photography, and making TikToks!
+          </p>
+        </div>
         <div class="face">
           <img src="face.JPG" alt="" />
         </div>
       </div>
     </section>
+
+    <!-- Experience -->
+    <section class="about-me" id="experience">
+      <h1>/experience</h1>
+      <div class="container">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          similique ullam unde, exercitationem a distinctio corrupti aperiam
+          tenetur, quos recusandae dolorem reprehenderit? Iusto cum facere
+          fugit. Hic sapiente voluptatem vero!
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects -->
     <section class="about-me" id="projects">
       <h1>/projects</h1>
       <div class="container">
@@ -48,9 +90,11 @@
       </div>
     </section>
 
+    <!-- Navbar -->
     <nav class="nav">
       <a href="#intro">/home</a>
       <a href="#about">/about</a>
+      <a href="#experience">/experience</a>
       <a href="#projects">/projects</a>
       <a href="#">/contact</a>
     </nav>

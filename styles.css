@@ -7,6 +7,9 @@
   --green: #c2ded1;
   --dgreen: #97aca2;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-size: 12px;
   font-family: "Roboto", sans-serif;
@@ -55,11 +58,22 @@ span {
 }
 .intro-desc {
   font-size: 22px;
-  max-width: 40%;
+  max-width: 70%;
   text-align: justify;
   padding-bottom: 50px;
   margin-top: -20px;
   color: var(--dgreen);
+}
+.intro object {
+  max-width: 350px;
+}
+.img-desc {
+  display: flex;
+  flex-direction: row;
+}
+.man {
+  margin-top: 5%;
+  margin-right: 30%;
 }
 .intro-contact {
   text-decoration: none;
@@ -76,6 +90,7 @@ span {
   flex-direction: row;
 }
 .about-me {
+  padding-top: 5px;
   padding-left: 15%;
   padding-right: 20%;
   min-height: 60vh;
@@ -95,6 +110,29 @@ span {
   font-size: 46px;
   font-weight: 700;
   color: var(--gold);
+}
+.about-me a {
+  text-decoration: none;
+  color: var(--gold);
+  font-weight: 32px;
+}
+.tech-stack {
+  padding-top: 20px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 10px));
+}
+.tech-stack li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 18px;
+  color: var(--gold);
+}
+.tech-stack li::before {
+  content: "▹ ";
+  color: var(--gold);
+  position: absolute;
+  left: 0;
 }
 /* Image div */
 .face {
