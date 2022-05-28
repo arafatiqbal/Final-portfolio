@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 :root {
   --dark: #354259;
   --darkigh: #485975;
@@ -12,7 +12,7 @@ html {
 }
 body {
   font-size: 12px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
   background: var(--dark);
 }
 .nav {
@@ -80,7 +80,7 @@ body {
   padding: 15px 30px;
   cursor: pointer;
   border: 3px solid var(--gold);
-  border-radius: 4px;
+  border-radius: 10px;
 }
 .container {
   display: flex;
@@ -113,11 +113,14 @@ body {
   color: var(--gold);
   font-weight: 32px;
 }
-.tech-stack {
+#stack {
   padding-top: 20px;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2, minmax(180px, 10px));
+}
+.tech-stack {
+  list-style: none;
 }
 .tech-stack li {
   position: relative;
@@ -130,6 +133,11 @@ body {
   color: var(--gold);
   position: absolute;
   left: 0;
+}
+#job-desc li {
+  color: var(--dgreen);
+  font-size: 21px;
+  text-align: justify;
 }
 /* Image div */
 .face {
@@ -152,9 +160,26 @@ body {
   margin: 0;
   max-width: 600px;
 }
-.expdesc {
-  padding-left: 20px;
+#experience {
+  margin-top: 50px;
+}
+#experience h1::after {
+  content: "";
+  display: block;
+  width: 300px;
+  margin-top: 40px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: var(--darkigh);
+}
+#date {
+  color: var(--brown);
+}
+.exptitle {
+  color: var(--gold);
+  padding-bottom: 20px;
   max-width: 600px;
+  font-size: 13px;
 }
 .footer {
   display: flex;
@@ -162,4 +187,11 @@ body {
   text-align: center;
   justify-content: center;
   color: var(--gold);
+  font-size: 15px;
+}
+.footer a {
+  text-decoration: none;
+  color: var(--green);
+}
+@media only screen and (min-width: 300px) {
 }
