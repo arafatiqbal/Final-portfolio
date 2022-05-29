@@ -33,6 +33,12 @@ body {
 .nav a:hover {
   color: var(--green);
 }
+.social {
+  padding-top: 30px;
+}
+.links {
+  padding: 3px;
+}
 .intro {
   display: flex;
   flex-direction: column;
@@ -178,13 +184,62 @@ body {
 .exptitle {
   color: var(--gold);
   padding-bottom: 20px;
-  max-width: 600px;
+  max-width: 800px;
   font-size: 13px;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+.card {
+  display: flex;
+  padding: 2rem 1.75rem;
+  flex-direction: column;
+  position: relative;
+  background-color: var(--darkigh);
+  border-radius: 15px;
+}
+.card-header {
+  margin-top: -20px;
+  display: flex;
+  padding: 1.25em 0 !important;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: none !important;
+}
+.card-title {
+  color: var(--gold);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.card-desc {
+  color: var(--brown);
+  font-size: 18px;
+  padding-bottom: 40px;
+}
+.card-tech {
+  color: var(--brown);
+  font-size: 16px;
+}
+.folder-icon {
+  font-size: 30px;
+  color: var(--green);
+}
+#external-links a {
+  font-size: 20px;
+  padding: 3px;
+  color: var(--gold);
+}
+#external-links a:hover {
+  color: var(--green);
 }
 .footer {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding-top: 100px;
   justify-content: center;
   color: var(--gold);
   font-size: 15px;
@@ -248,5 +303,11 @@ body {
   }
   #about h1:after {
     display: none;
+  }
+}
+@media (max-width: 1080px) {
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 10px;
   }
 }
