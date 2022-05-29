@@ -1,5 +1,1 @@
-var flkty = new Flickity(".main-gallery", {
-  // options
-  cellAlign: "left",
-  contain: true,
-});
+<script src="https://smtpjs.com/v3/smtp.js"></script>;
