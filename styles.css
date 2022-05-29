@@ -268,7 +268,8 @@ form {
   border-radius: 15px;
 }
 input,
-textarea {
+textarea,
+#contact-btn {
   padding: 12px;
   margin: 10px;
   border: 2px solid var(--dark);
@@ -276,10 +277,10 @@ textarea {
   color: var(--gold);
   background-color: var(--dark);
 }
-input[type="submit"] {
+#contact-btn {
   width: 200px;
 }
-input[type="submit"]:hover {
+#contact-btn:hover {
   background-color: var(--gold);
   color: #354259;
 }

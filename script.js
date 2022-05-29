@@ -1,19 +1,20 @@
-const form = document.querySelector("#form");
+const btn = document.querySelector("contact-button");
 
-function sendMsg(e) {
-  const name = document.querySelector("#name"),
-    subject = document.querySelector("#subject"),
-    email = document.querySelector("#email"),
-    message = document.querySelector("#message");
+const name = document.querySelector("#name"),
+  subject = document.querySelector("#subject"),
+  email = document.querySelector("#email"),
+  message = document.querySelector("#message");
 
+btn.addEventListener("click", () => {
   Email.send({
-    SecureToken: "1844b681-b0c6-42e4-8d8d-c5d39430a725",
+    Host: "smtp.yourisp.com",
+    Username: "arafatiqbal123@gmail.com",
+    Password: "D15B7BE4FABEE006875879B679D7E15DCC8D",
     To: "contact.arafatiq@gmail.com",
     From: email.value,
     Subject: subject.value,
     Body: message.value,
   }).then((message) => alert(message));
-  console.log("inside");
-}
 
-form.addEventListener("submit", sendMsg);
+  console.log("Here is the info", subject.value, email.value, message.value);
+});
