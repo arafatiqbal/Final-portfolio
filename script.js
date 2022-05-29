@@ -10,8 +10,8 @@ function sendMsg(e) {
     SecureToken: "1844b681-b0c6-42e4-8d8d-c5d39430a725",
     To: "contact.arafatiq@gmail.com",
     From: email.value,
-    Subject: subject,
-    Body: message,
+    Subject: subject.value,
+    Body: message.value,
   }).then((message) => alert(message));
 }
 
