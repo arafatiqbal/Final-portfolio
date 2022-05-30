@@ -372,6 +372,9 @@ textarea::placeholder {
   #about h1:after {
     display: none;
   }
+  #contact-btn {
+    width: unset;
+  }
 }
 @media (min-width: 769px) {
   .social-mobile {
@@ -385,8 +388,5 @@ textarea::placeholder {
   }
   .contact-box {
     width: 100%;
-  }
-  input[type="submit"] {
-    width: unset;
   }
 }
