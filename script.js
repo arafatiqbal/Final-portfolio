@@ -5,8 +5,10 @@ const name = document.querySelector("#name"),
 
 function sendEmail() {
   Email.send({
-    SecureToken: "bcd89087-d6ec-4cd0-bbc2-364b02e2de77",
-    To: "contact.arafatiq@gmail.com",
+    Host: "smtp.elasticemail.com",
+    Username: "arafatiqbal123@gmail.com",
+    Password: "D77D93E091EE432EABB3195A4E56491F7927",
+    To: "arafatiqbal123@gmail.com",
     From: email.value,
     Subject: subject.value,
     Body: message.value,
