@@ -13,3 +13,24 @@ function sendEmail() {
 
   console.log("Here is the info", subject.value, email.value, message.value);
 }
+
+// Credits https://tobiasahlin.com/moving-letters/#7
+anime
+  .timeline({ loop: false })
+  .add({
+    targets: ".intro-title .letter",
+    translateY: ["1.1em", 0],
+    translateX: ["0.55em", 0],
+    translateZ: 0,
+    rotateZ: [180, 0],
+    duration: 1100,
+    easing: "easeOutExpo",
+    delay: (el, i) => 50 * i,
+  })
+  .add({
+    targets: ".ml7",
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000,
+  });

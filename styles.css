@@ -66,6 +66,19 @@ body {
   font-size: 86px;
   color: var(--green);
 }
+.intro-title .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+.intro-title .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+  line-height: 1em;
+}
 .name {
   color: var(--gold);
 }
