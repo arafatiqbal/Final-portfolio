@@ -39,6 +39,17 @@
         <a href="mailto:arafatiqbal123@gmail.com" class="intro-contact"
           >Email Me</a
         >
+        <div class="social-mobile">
+          <a class="links" href="https://github.com/arafatiqbal"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a class="links" href="https://www.linkedin.com/in/arafat-iqbal/"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a class="links" href="https://www.tiktok.com/@arafat.iq"
+            ><i class="bi bi-tiktok"></i
+          ></a>
+        </div>
       </section>
 
       <!-- About Me -->
@@ -205,7 +216,7 @@
       <section class="about-me" id="contact">
         <div class="container">
           <div class="contact-box">
-            <form id="form" action="#">
+            <form id="form" onsubmit="sendEmail(); reset(); return false;">
               <h1 id="contact-me">/contact me</h1>
               <label for="name"></label>
               <input

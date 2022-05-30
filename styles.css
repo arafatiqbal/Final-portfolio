@@ -37,6 +37,19 @@ body {
 }
 .social {
   padding-top: 30px;
+  font-size: 30px;
+  text-decoration: none;
+}
+.social i {
+  color: var(--gold);
+}
+.social-mobile {
+  padding-top: 30px;
+  font-size: 30px;
+  text-decoration: none;
+}
+.social-mobile i {
+  color: var(--gold);
 }
 .links {
   padding: 3px;
@@ -357,6 +370,11 @@ textarea::placeholder {
     padding-bottom: unset;
   }
   #about h1:after {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .social-mobile {
     display: none;
   }
 }
