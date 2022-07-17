@@ -54,6 +54,9 @@ body {
 .links {
   padding: 3px;
 }
+.links :hover {
+  color: var(--dgreen);
+}
 .intro {
   display: flex;
   flex-direction: column;
