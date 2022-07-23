@@ -21,3 +21,5 @@ The last thing that I wanted to add to my website was the contact section, which
 Once the contact form was subimited, I would then take them to a "Thank you" page which would just confirmt that the email was sent, and delivered. That page would then redirect you back to the main website.
 
 Overall this project wasn't that bad, and I had a great time creating it. I really enjoyed how mine came out, and I really liked the color shcme that I chose as it looked really good at the end product. I also liked my navbar, I added a hover effect to it, and I think it turned out really great. One thing I would change for this project is maybe have it be a react app. I think this way I wouldn't have to write as much code, as I think I was reusing a lot of code throughout this whole project, and creating a componenet would have been a lot more easier. Additionally I think maybe adding a "light" theme to the website would be pretty cool as well, I think it would be nice to see how with a press of a button I could change all of the colors on the site.
+
+Thanks
